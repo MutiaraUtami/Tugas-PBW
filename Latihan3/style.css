@@ -74,7 +74,7 @@ footer {
     cursor: pointer;
     transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
- 
+
 .btn:hover {
     background-color: #2980B9;
 }
