@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Cek Nilai Mahasiswa</title>
+            <link rel = "stylesheet" type = "text/css" href = "style.css">
+        </head>
+        <body>
+            <h1>Pengecekan Nilai Mahasiswa</h1>
+            <p>Selamat datang! Masukkan nilai Anda.</p>
+            <form>
+                <label for = "nim">NIM:</label>
+                <input type = "text" id = "nim" name = "nim"><br>
+
+                <label for = "nilai">Nilai:</label>
+                <input type = "text" id = "nilai" name = "nilai"><br>
+
+                <button type = "button" onclick = "cekNilai()">Cek Nilai</button>
+
+                <p>Hasil: <span id = "hasil"></span></p>
+                
+            </form>
+        <script src = "index.js">
+        </script>
+        </body>
+    </html>
