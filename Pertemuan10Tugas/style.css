@@ -1,0 +1,75 @@
+/* Reset dan latar belakang */
+body {
+    font-family: Poppins, sans-serif;
+    background-color: #8B0000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Form container */
+form {
+    background-color: #fff;
+    padding: 20px 25px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Judul di dalam form */
+h2 {
+    text-align: center;
+    color: #8B0000;
+}
+
+/* Label dan input */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Tombol */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #8B0000;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #a10000;
+}
+
+/* Output hasil */
+.output {
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px 25px 20px 25px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    color: #333;
+    line-height: 1.6;
+    }
