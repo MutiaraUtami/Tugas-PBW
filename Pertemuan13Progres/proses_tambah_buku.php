@@ -9,10 +9,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    $harga = $_POST['harga'];
    $stok = $_POST['stok'];
 
-
    $stmt = $conn->prepare("INSERT INTO Buku (Judul, Penulis, Tahun_Terbit, Harga, stok) VALUES (?, ?, ?, ?, ?)");
    $stmt->bind_param("ssiii", $judul, $penulis, $tahun_terbit, $harga, $stok);
-
 
    if ($stmt->execute()) {
        echo "<script>

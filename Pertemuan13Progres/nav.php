@@ -20,7 +20,7 @@
                        <a class="nav-link" href="lihat_transaksi.php">Lihat Pesanan</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link" href="hapus.php">Hapus Buku</a>
+                       <a class="nav-link" href="form_hapus.php">Hapus Buku</a>
                    </li>
                </ul>
            </div>

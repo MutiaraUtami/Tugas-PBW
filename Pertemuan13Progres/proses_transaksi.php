@@ -9,7 +9,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $tanggal_pesanan = date('Y-m-d');
     $total_harga = 0;
 
-
     // Insert ke tabel Pesanan
     $stmt = $conn->prepare("INSERT INTO Pesanan (Tanggal_Pesanan, Pelanggan_ID, Total_Harga) VALUES (?, ?, ?)");
     $stmt->bind_param("sid", $tanggal_pesanan, $pelanggan_id, $total_harga);
