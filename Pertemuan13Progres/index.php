@@ -1,3 +1,4 @@
+<?php include 'proteksi.php'; ?>
 <?php include 'proses_index.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,14 +12,12 @@
    <?php include 'nav.php'; ?>
    <div class="container mt-4">
        <h2>Daftar Buku</h2>
-
-
        <!-- Form Pencarian -->
        <form method="get" class="row g-3 mb-4">
            <div class="col-md-5">
-               <label for="judul" class="form-label">Cari Berdasarkan Judul</label>
-               <input type="text" class="form-control" id="judul" name="judul" placeholder="Masukkan judul buku" value="<?php htmlspecialchars($search_judul) ?>">
-           </div>
+           <label for="judul" class="form-label">Cari Berdasarkan Judul</label>
+           <input type="text" class="form-control" id="judul" name="judul" placeholder="Masukkan judul buku" value="<?php echo htmlspecialchars($search_judul ?? ''); ?>">
+            </div>
            <div class="col-md-3">
                <label for="tahun_terbit" class="form-label">Cari Berdasarkan Tahun Terbit</label>
                <input type="number" class="form-control" id="tahun_terbit" name="tahun_terbit" placeholder="Masukkan tahun terbit" value="<?php htmlspecialchars($search_tahun) ?>">
@@ -39,7 +38,7 @@
                    <th>ID</th>
                    <th>Judul</th>
                    <th>Penulis</th>
-                   <th>Tahun Terbit</th>
+                    <th>Tahun Terbit</th>
                    <th>Harga</th>
                </tr>
            </thead>

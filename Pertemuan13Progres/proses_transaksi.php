@@ -15,12 +15,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->execute();
     $pesanan_id = $conn->insert_id;
 
-
     // Loop buku
     foreach ($_POST['buku'] as $buku) {
         $buku_id = $buku['id'];
         $kuantitas = $buku['kuantitas'];
-
 
         // Ambil harga dan stok
         $stmt = $conn->prepare("SELECT Harga, Stok FROM Buku WHERE ID = ?");
@@ -29,7 +27,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->bind_result($harga_per_satuan, $stok);
         $stmt->fetch();
         $stmt->close();
-
 
         if ($stok < $kuantitas) {
             throw new Exception("Stok buku ID $buku_id tidak cukup.");

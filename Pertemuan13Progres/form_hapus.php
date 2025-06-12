@@ -8,7 +8,6 @@ $buku_result = $conn->query("SELECT ID, Judul FROM Buku");
 $pelanggan_result = $conn->query("SELECT ID, Nama FROM Pelanggan");
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,12 +18,9 @@ $pelanggan_result = $conn->query("SELECT ID, Nama FROM Pelanggan");
 </head>
 <body>
 <div class="container mt-4">
-   <h2>Hapus Buku</h2>
    <?php if (isset($_GET['message'])): ?>
        <div class="alert alert-info"><?= htmlspecialchars($_GET['message']) ?></div>
    <?php endif; ?>
-
-
    <form method="get" action="proses_hapus.php">
        <h3>Hapus Buku</h3>
        <div class="mb-3">

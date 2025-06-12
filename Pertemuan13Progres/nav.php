@@ -22,7 +22,17 @@
                    <li class="nav-item">
                        <a class="nav-link" href="form_hapus.php">Hapus Buku</a>
                    </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="tambah_pelanggan.php">Tambah Pelanggan</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="lihat_pelanggan.php">Lihat Pelanggan</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="index_pelanggan.php">Daftar Pelanggan</a>
+                   </li>
                </ul>
+               <a href="logout.php" class="btn btn-danger">Logout</a>
            </div>
        </div>
    </nav>
